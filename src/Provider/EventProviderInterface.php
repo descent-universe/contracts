@@ -11,7 +11,15 @@
 namespace Descent\Contracts\Provider;
 
 
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+
 interface EventProviderInterface
 {
-
+    /**
+     * allows to engage events to the main event dispatcher.
+     *
+     * @param EventDispatcherInterface $events
+     * @return mixed
+     */
+    public function events(EventDispatcherInterface $events);
 }
