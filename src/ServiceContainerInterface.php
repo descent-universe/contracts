@@ -13,6 +13,7 @@ namespace Descent\Contracts;
 
 use Descent\Services\Container\ContainerInterface;
 use Descent\Services\Container\DependencyBuilderInterface;
+use Descent\Contracts\Provider\ServiceProviderInterface;
 
 /**
  * Interface ServiceContainerInterface

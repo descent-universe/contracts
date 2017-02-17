@@ -11,7 +11,15 @@
 namespace Descent\Contracts\Provider;
 
 
+use Descent\Contracts\ServiceContainerInterface;
+
 interface ServiceProviderInterface
 {
-
+    /**
+     * encloses services assignments to provided method body
+     *
+     * @param ServiceContainerInterface $services
+     * @return mixed
+     */
+    public function services(ServiceContainerInterface $services);
 }
