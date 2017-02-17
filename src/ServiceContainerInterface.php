@@ -14,12 +14,13 @@ namespace Descent\Contracts;
 use Descent\Services\Container\ContainerInterface;
 use Descent\Services\Container\DependencyBuilderInterface;
 use Descent\Contracts\Provider\ServiceProviderInterface;
+use Psr\Container\ContainerInterface as PsrContainerInterface;
 
 /**
  * Interface ServiceContainerInterface
  * @package Descent\Contracts
  */
-interface ServiceContainerInterface extends DependencyBuilderInterface, ContainerInterface
+interface ServiceContainerInterface extends DependencyBuilderInterface, ContainerInterface, PsrContainerInterface
 {
     /**
      * registers the provided service providers.

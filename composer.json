@@ -9,5 +9,7 @@
             "email": "nihylum@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "psr/container": "~1.0"
+    }
 }

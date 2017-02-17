@@ -11,7 +11,17 @@
 namespace Descent\Contracts\Provider;
 
 
+use Descent\Contracts\ConfigurationInterface;
+use Descent\Contracts\ServiceContainerInterface;
+
 interface BootableProviderInterface
 {
-
+    /**
+     * boots the provider under the processed configuration and by the initialized services.
+     *
+     * @param ServiceContainerInterface $services
+     * @param ConfigurationInterface $configuration
+     * @return mixed
+     */
+    public function boot(ServiceContainerInterface $services, ConfigurationInterface $configuration);
 }
